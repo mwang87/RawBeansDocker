@@ -8,4 +8,4 @@ build:
 	docker build . -t rawbeans-test
 
 bash:
-	docker run -i -t --rm rawbeans-test /bin/bash
+	docker run -i -t -v $(PWD)/data:/data --rm rawbeans-test /bin/bash

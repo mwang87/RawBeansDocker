@@ -1,0 +1,2 @@
+wget https://gnps-external.ucsd.edu/massiveftpproxy?ftppath=ftp://massive.ucsd.edu/MSV000084494/ccms_peak/raw/GNPS00002_A3_p.mzML --output-document=GNPS00002_A3_p.mzML
+wget https://gnps-external.ucsd.edu/massiveftpproxy?ftppath=ftp://massive.ucsd.edu/MSV000085852/ccms_peak/QC_raw/QC_0.mzML --output-document=QC_0.mzML
