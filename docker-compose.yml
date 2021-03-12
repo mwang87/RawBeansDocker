@@ -1,0 +1,19 @@
+version: '3'
+services:
+  rawbeans-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rawbeans-test
+    volumes:
+      - ./data:/data:rw
+    networks:
+      - default
+      - nginx-net
+    restart: unless-stopped
+    command: /bin/bash
+
+networks:
+  nginx-net:
+    external:
+      name: nginx-net
